@@ -271,7 +271,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
-  align-items: center;
+  align-items: start;
 }
 
 /* Video cards */
@@ -280,16 +280,24 @@ ul {
   border-radius: var(--radius-card);
   overflow: hidden;
   display: flex;
-  align-items: stretch;
+  flex-direction: column;
 }
 
 .ig-wrapper {
+  position: relative;
   width: 100%;
+  padding-top: 177%;
+  overflow: hidden;
+  border-radius: var(--radius-card);
 }
 
 .ig-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100% !important;
-  border-radius: var(--radius-card) !important;
+  height: 100% !important;
+  border: none !important;
 }
 
 .portfolio-video iframe {
