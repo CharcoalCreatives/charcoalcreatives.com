@@ -283,23 +283,6 @@ ul {
   flex-direction: column;
 }
 
-.ig-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 177%;
-  overflow: hidden;
-  border-radius: var(--radius-card);
-}
-
-.ig-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  border: none !important;
-}
-
 .portfolio-video iframe {
   width: 100%;
   height: 100%;
