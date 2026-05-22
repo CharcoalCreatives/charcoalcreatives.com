@@ -271,17 +271,25 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 16px;
-  align-items: start;
+  align-items: center;
 }
 
 /* Video cards */
 .portfolio-video {
   background: var(--card-bg);
-  aspect-ratio: 9/16;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+  border-radius: var(--radius-card);
   overflow: hidden;
+  display: flex;
+  align-items: stretch;
+}
+
+.ig-wrapper {
+  width: 100%;
+}
+
+.ig-wrapper iframe {
+  width: 100% !important;
+  border-radius: var(--radius-card) !important;
 }
 
 .portfolio-video iframe {
@@ -311,6 +319,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  align-self: center;
 }
 
 /* Brands card */
