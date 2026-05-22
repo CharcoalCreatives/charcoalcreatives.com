@@ -277,10 +277,12 @@ ul {
 /* Video cards */
 .portfolio-video {
   background: var(--card-bg);
-  border-radius: var(--radius-card);
-  overflow: hidden;
+  aspect-ratio: 9/16;
+  position: relative;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--radius-card);
 }
 
 .portfolio-video iframe {
@@ -289,7 +291,6 @@ ul {
   position: absolute;
   inset: 0;
   border: none;
-  border-radius: var(--radius-card);
 }
 
 .video-label {
