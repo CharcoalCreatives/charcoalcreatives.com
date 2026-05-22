@@ -138,7 +138,7 @@ ul {
 }
 
 .logo-img {
-  width: clamp(440px, 60vw, 620px);
+  width: clamp(660px, 135vw, 1260px);
   height: auto;
   margin: 0 auto;
   /* Invert to white on black hero */
