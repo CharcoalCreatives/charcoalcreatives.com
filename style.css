@@ -433,9 +433,9 @@ ul {
 
 .packages-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  max-width: 660px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
