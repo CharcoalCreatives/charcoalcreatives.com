@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charcoal Creatives</title>
+  <meta name="description" content="Bespoke content creation for businesses. We help busy business owners create content to generate leads." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-inner">
+      <!-- LOGO: swap src to your actual logo file path -->
+      <div class="hero-logo">
+        <img src="assets/images/cc-logo.png" alt="Charcoal Creatives Logo" class="logo-img" />
+      </div>
+
+      <h1 class="hero-headline">
+        <!-- CUSTOMISE: edit headline text here -->
+        YOUR BRAND. <span class="headline-accent">ELEVATED.</span>
+      </h1>
+
+      <p class="hero-sub">
+        <!-- CUSTOMISE: edit subheadline text here -->
+        WE HELP BUSY BUSINESS OWNERS CREATE<br />
+        BESPOKE CONTENT TO <strong>GENERATE LEADS.</strong>
+      </p>
+
+      <a href="#contact" class="btn-pill">ENQUIRE</a>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       WHAT WE DO SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="what-we-do">
+    <div class="section-inner">
+      <h2 class="section-title">
+        <!-- CUSTOMISE: section title -->
+        WHAT WE DO
+      </h2>
+
+      <ol class="roadmap">
+        <!-- CUSTOMISE: edit each step's title and description -->
+        <li class="roadmap-step">
+          <div class="step-left">
+            <span class="step-num">01</span>
+            <span class="step-title">CONSULT</span>
+          </div>
+          <p class="step-desc">We learn your brand, audience and goals.</p>
+        </li>
+        <li class="roadmap-step">
+          <div class="step-left">
+            <span class="step-num">02</span>
+            <span class="step-title">STRATEGISE</span>
+          </div>
+          <p class="step-desc">Plan and map out content for your brand.</p>
+        </li>
+        <li class="roadmap-step">
+          <div class="step-left">
+            <span class="step-num">03</span>
+            <span class="step-title">SHOOT</span>
+          </div>
+          <p class="step-desc">We direct and capture photos and videos.</p>
+        </li>
+        <li class="roadmap-step">
+          <div class="step-left">
+            <span class="step-num">04</span>
+            <span class="step-title">EDIT</span>
+          </div>
+          <p class="step-desc">Every video edited to a high standard.</p>
+        </li>
+        <li class="roadmap-step">
+          <div class="step-left">
+            <span class="step-num">05</span>
+            <span class="step-title">PUBLISH</span>
+          </div>
+          <p class="step-desc">Post videos on platforms on scheduled dates.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="portfolio">
+    <div class="section-inner">
+      <div class="portfolio-header">
+        <h2 class="section-title">
+          <!-- CUSTOMISE: section title -->
+          PORTFOLIO
+        </h2>
+        <!-- CUSTOMISE: change href to your Instagram reels URL -->
+        <a href="https://www.instagram.com/charcoalcre8tives/reels/" target="_blank" rel="noopener" class="btn-pill btn-sm">SEE MORE</a>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- VIDEO 1: replace src with your video embed URL -->
+        <div class="portfolio-video card-rounded">
+          <iframe
+            id="video1"
+            src="https://www.youtube.com/embed/VIDEO_ID_1"
+            title="Embedded video 1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <p class="video-label">embedded video 1</p>
+        </div>
+
+        <!-- MIDDLE COLUMN: brands + reviews -->
+        <div class="portfolio-middle">
+
+          <!-- BRANDS CAROUSEL -->
+          <div class="brands-card card-rounded">
+            <p class="brands-label">BRANDS WE WORK WITH</p>
+            <div class="brands-carousel">
+              <button class="carousel-arrow left" onclick="changeBrand(-1)" aria-label="Previous brand">&#8249;</button>
+              <div class="brand-slide">
+                <!--
+                  CUSTOMISE: Add brand logos below.
+                  Each .brand-item holds one logo image.
+                  Add/remove <div class="brand-item"> blocks for each brand.
+                -->
+                <div class="brand-item active">
+                  <img src="assets/images/brand-logo-1.png" alt="Brand 1" />
+                </div>
+                <div class="brand-item">
+                  <img src="assets/images/brand-logo-2.png" alt="Brand 2" />
+                </div>
+                <div class="brand-item">
+                  <img src="assets/images/brand-logo-3.png" alt="Brand 3" />
+                </div>
+              </div>
+              <button class="carousel-arrow right" onclick="changeBrand(1)" aria-label="Next brand">&#8250;</button>
+            </div>
+          </div>
+
+          <!-- REVIEWS CAROUSEL -->
+          <div class="reviews-card card-rounded">
+            <!--
+              CUSTOMISE: Add one .review-item per client review.
+              The review shown syncs with the brand carousel above.
+            -->
+            <div class="review-item active">
+              <p class="review-text">"Charcoal Creatives transformed our social media presence completely. Incredible work!"</p>
+              <span class="review-author">— Client Name, Brand 1</span>
+            </div>
+            <div class="review-item">
+              <p class="review-text">"Professional, creative, and results-driven. Highly recommend!"</p>
+              <span class="review-author">— Client Name, Brand 2</span>
+            </div>
+            <div class="review-item">
+              <p class="review-text">"Our engagement skyrocketed after working with the CC team."</p>
+              <span class="review-author">— Client Name, Brand 3</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- VIDEO 2: replace src with your video embed URL -->
+        <div class="portfolio-video card-rounded">
+          <iframe
+            id="video2"
+            src="https://www.youtube.com/embed/VIDEO_ID_2"
+            title="Embedded video 2"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          <p class="video-label">embedded video 2</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PACKAGES SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="packages">
+    <div class="section-inner">
+      <div class="packages-header">
+        <h2 class="section-title">
+          <!-- CUSTOMISE: section title -->
+          PACKAGES
+        </h2>
+        <!--
+          CUSTOMISE: Replace href with the path to your T&C PDF.
+          File should be at: assets/pdfs/terms-and-conditions.pdf
+        -->
+        <a href="assets/pdfs/terms-and-conditions.pdf" target="_blank" rel="noopener" class="btn-pill btn-sm">T&amp;C</a>
+      </div>
+
+      <div class="packages-grid">
+
+        <!-- PACKAGE 1: STARTER -->
+        <div class="package-card card-rounded">
+          <span class="package-badge">STARTER</span>
+          <ul class="package-features">
+            <!-- CUSTOMISE: edit each feature line -->
+            <li>4 SHORT FORM VIDEOS</li>
+            <li>1 CONTENT PLANNING SESSION</li>
+            <li>1 HALF DAY SHOOT</li>
+            <li>14 DAY DELIVERY</li>
+            <li>2 REVISION EDITS WITHIN 24 HOURS OF DELIVERY</li>
+          </ul>
+        </div>
+
+        <!-- PACKAGE 2: GROWTH -->
+        <div class="package-card card-rounded">
+          <span class="package-badge">GROWTH</span>
+          <ul class="package-features">
+            <!-- CUSTOMISE: edit each feature line -->
+            <li>12 SHORT FORM VIDEOS</li>
+            <li>2 CONTENT PLANNING SESSIONS</li>
+            <li>2 HALF DAY SHOOTS</li>
+            <li>10 DAY DELIVERY</li>
+            <li>2 REVISION EDITS WITHIN 24 HOURS OF DELIVERY</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="section-inner">
+      <h2 class="section-title">
+        <!-- CUSTOMISE: section title -->
+        CONTACT US
+      </h2>
+
+      <form id="contact-form" onsubmit="handleSubmit(event)">
+
+        <div class="form-group">
+          <label for="name">NAME</label>
+          <input type="text" id="name" name="name" required placeholder="" class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" name="email" required placeholder="" class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">CONTACT NUMBER</label>
+          <input type="tel" id="phone" name="phone" placeholder="" class="form-input" />
+        </div>
+
+        <div class="form-group">
+          <label for="package">PACKAGE OF INTEREST</label>
+          <select id="package" name="package" class="form-input">
+            <option value="" disabled selected></option>
+            <!-- CUSTOMISE: add/edit package options -->
+            <option value="Starter">Starter</option>
+            <option value="Growth">Growth</option>
+            <option value="Custom">Custom / Bespoke</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">TELL US ABOUT YOUR BUSINESS</label>
+          <textarea id="message" name="message" rows="5" required class="form-input form-textarea"></textarea>
+        </div>
+
+        <!-- reCAPTCHA: replace YOUR_SITE_KEY with your actual reCAPTCHA v2 site key -->
+        <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
+        <div class="form-footer">
+          <button type="submit" class="btn-pill btn-submit" id="submit-btn">SUBMIT</button>
+          <p class="form-alt-email">
+            <!-- CUSTOMISE: email address -->
+            OR EMAIL US AT <a href="mailto:admin@charcoalcreatives.com">admin@charcoalcreatives.com</a>
+          </p>
+        </div>
+
+        <div id="form-message" class="form-message" aria-live="polite"></div>
+
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
