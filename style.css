@@ -447,8 +447,13 @@ ul {
 }
 
 @media (max-width: 480px) {
+  .packages-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
   .package-card:last-child {
     width: 100%;
+    grid-column: 1;
   }
 }
 
