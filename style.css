@@ -446,6 +446,12 @@ ul {
   margin: 0 auto;
 }
 
+@media (max-width: 480px) {
+  .package-card:last-child {
+    width: 100%;
+  }
+}
+
 .package-card {
   background: var(--card-bg);
   padding: 28px 24px 32px;
