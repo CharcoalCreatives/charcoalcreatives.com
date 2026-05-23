@@ -442,9 +442,8 @@ ul {
 
 .package-card:last-child {
   grid-column: 1 / -1;
-  max-width: 320px;
+  width: calc(50% - 10px);
   margin: 0 auto;
-  width: 100%;
 }
 
 .package-card {
